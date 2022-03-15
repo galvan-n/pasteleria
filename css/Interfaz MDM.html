@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0066)https://datosmaestros.tec.mx:7004/interfazmdm/conexion/getConsulta -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge; text/html; charset=iso-8859-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    	
+		<link rel="stylesheet" href="./Interfaz MDM_files/bootstrap.min.css" title="InterfazMDM" type="text/css" media="screen">
+		<link rel="stylesheet" href="./Interfaz MDM_files/bootstrap-theme.min.css" title="InterfazMDM" type="text/css" media="screen">
+		<link rel="stylesheet" href="./Interfaz MDM_files/bootsitesm.css" title="InterfazMDM" type="text/css" media="screen">
+		<link rel="stylesheet" href="./Interfaz MDM_files/bootstrap-datepicker3.css" title="InterfazMDM" type="text/css" media="screen">
+		<link rel="stylesheet" href="./Interfaz MDM_files/jquery.smartmenus.bootstrap.css" title="InterfazMDM" type="text/css" media="screen">
+		
+		<style>
+			#WindowLoad{
+				 position:fixed;
+				 left:0;
+				 top:0;
+				 background-color:#000;
+				 opacity:0.6;
+				 filter:alpha(opacity=60);
+				 z-index:3200;
+			}
+		</style>
+				
+	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+    	
+		<title>Interfaz MDM</title>
+	<style>@media print {#ghostery-tracker-tally {display:none !important}}</style></head>
+	<body>
+		<div class="container-fluid">
+			
+			
+
+<nav class="navbar navbar-mdm navbar-fixed-top panel-info">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<a href="https://datosmaestros.tec.mx:7004/interfazmdm/conexion/getConsulta.action" class="navbar-brand">
+				<img src="./Interfaz MDM_files/logo_institucion.png"></a>
+	        
+	        <a href="https://datosmaestros.tec.mx:7004/interfazmdm/conexion/getConsulta.action" class="navbar-brand">
+				Datos Maestros</a>
+		</div>
+		
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-left sm" data-smartmenus-id="1647305185120748">				
+				
+				
+				
+					<li class="dropdown">
+					    <a class="dropdown-toggle has-submenu" data-toggle="dropdown" href="https://datosmaestros.tec.mx:7004/interfazmdm/conexion/getConsulta#" id="themes" aria-haspopup="true" aria-controls="sm-1647305185120748-1" aria-expanded="false"> Persona <span class="caret"></span></a>
+						
+						<ul class="dropdown-menu" id="sm-1647305185120748-1" role="group" aria-hidden="true" aria-labelledby="themes" aria-expanded="false">
+						  	
+								<li><a href="https://datosmaestros.tec.mx:7004/interfazmdm/persona/registraPersona.action">Registrar Persona</a></li>
+							
+							
+							
+						
+							
+								<li><a href="https://datosmaestros.tec.mx:7004/interfazmdm/persona/buscaPersona.action">Búsqueda de Persona</a></li>
+							
+							
+							
+						</ul>
+					</li>
+	      		
+
+	      		
+	      		
+	
+	      		
+	      		
+
+	      		
+	
+				<li>
+	           	  	<a href="https://datosmaestros.tec.mx:7004/interfazmdm/static/pdf/diferenciasPantallaInicialV2.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="Mostrar manual de pantalla principal">Ayuda</a>
+	          	</li>
+	          	<li>
+	          		<a href="https://datosmaestros.tec.mx:7004/interfazmdm/conexion/getConsulta?verPreguntas=true" data-toggle="tooltip" data-placement="bottom" title="Mostrar preguntas frecuentes"> FAQ </a>
+	        	</li>			        	
+				
+				<li>
+	           	  	<a href="https://miespacio.itesm.mx/" data-toggle="tooltip" data-placement="bottom" title="Regresar a MiEspacio">
+	           	  			<img src="./Interfaz MDM_files/miespacio_logo.png" width="72px" height="20px" class="img-responsive" alt="Responsive image"></a>
+	          	</li>
+			</ul>
+			
+			
+				<form id="datosBasicosLink" name="datosBasicosLink" action="https://datosmaestros.tec.mx:7004/interfazmdm/conexion/datosBasicosLink.action" method="post" class="navbar-form navbar-right">
+					<div class="form-group has-feedback">
+						<input type="text" name="entrada" maxlength="128" value="" id="entrada" class="form-control" title="Ingresar IMSS, RFC, CURP, Correo, Arroba o Nómina" data-toggle="tooltip" data-placement="left" placeholder="Buscar por Identificador" autofocus="autofocus">
+						 <i class="glyphicon glyphicon-search form-control-feedback"></i>
+					</div>
+				</form>
+
+
+
+			
+		</div>
+	</div>
+</nav>
+			
+			
+			
+			
+				
+
+<div class="container-alert">
+	
+	
+	
+		
+	
+	
+	
+	
+	
+	
+	
+		
+	
+</div>
+
+<div class="container-fluid">	
+	<div class="row">	
+		<!-- Panel Búsqueda de Personas panel-info-->
+		
+			<div class="col-lg-4">
+				<div>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Búsqueda de Persona</h3>
+						</div>
+						  
+						<div class="panel-body">
+							<p>Por favor proporcione al menos dos criterios para realizar la búsqueda.</p>
+							
+							<form id="buscaPersona" name="busqueda" action="https://datosmaestros.tec.mx:7004/interfazmdm/persona/buscaPersona.action" method="POST">									
+								<div class="form-group">
+									<label for="labelNombre">Nombre:</label>									
+									<input type="text" name="nombre" maxlength="60" value="" id="nombre" class="form-control">
+								</div>	
+								
+								<div class="form-group">	
+									<label for="apePat">Apellido Paterno:</label>																		
+									<input type="text" name="apellidoPaterno" maxlength="60" value="" id="buscaPersona_apellidoPaterno" class="form-control">
+								</div>
+								
+								<div class="form-group">	
+									<label for="apeMat">Apellido Materno:</label>																		
+									<input type="text" name="apellidoMaterno" maxlength="60" value="" id="buscaPersona_apellidoMaterno" class="form-control">
+								</div>
+								
+								<div class="form-group">
+									<label title="Fecha de Nacimiento, formato dd/mm/yyyy" for="fechaNacimiento">Fecha de Nacimiento:</label>																		
+									<input type="text" name="fechaNacimiento" value="" id="fechaNacimiento" class="form-control" data-provide="datepicker" autocomplete="off" data-date-end-date="0d">
+								</div>
+									
+								<button type="submit" class="btn btn-primary-mdm derecha" name="busca" onclick="jsShowWindowLoad();">
+									<span class="glyphicon glyphicon-search"> </span> Buscar
+								</button>
+							</form>
+
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	
+		<!-- Panel Personas panel-info -->
+		
+			<div class="col-lg-4">
+				<div class="bs-component">
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<h3 class="panel-title">Persona</h3>
+						</div>
+						  
+						<div class="panel-body">
+							<ul class="list-group">
+								
+									<li class="list-group-item">
+										<a href="https://datosmaestros.tec.mx:7004/interfazmdm/persona/registraPersona.action">Registrar Persona</a>
+									</li>
+								
+								
+								
+								
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+		<!-- Panel Escuelas panel-warning-->		  
+		 
+		
+		<!-- Panel Organizaciones panel-warning-->		  
+		 
+	</div>	
+	
+	<!-- Panel Catalogos panel-success-->				
+	<div class="row">
+		
+	</div>	
+			
+	<div class="row">
+		
+	</div>
+	
+	<div class="row espacio-abajo-panel">
+		
+	</div>
+</div>
+			
+			
+			
+			<div class="navbar navbar-mdm navbar-fixed-bottom">
+	<div class="container">	
+		<div class="navbar-collapse collapse" id="navbar-main">
+			<!-- <ul class="nav navbar-nav">										
+				<li><a href="https://datosmaestros.itesm.mx:7002/interfazmdm/conexion/validarUsuario" onclick="pageTracker._link(this.href); return false;">PROD</a></li>
+				<li><a href="https://datosmaestros.itesm.mx:7002/interfazmdmpprd/conexion/validarUsuario">PPRD</a></li>
+				<li><a href="https://datosmaestros.itesm.mx:7002/interfazmdmtrng/conexion/validarUsuario">TRNG</a></li>
+			</ul> -->
+		</div>				
+	</div>
+</div>	
+		</div>	
+		
+		<script src="./Interfaz MDM_files/jquery-2.1.4.min.js.descarga"></script>
+		<script src="./Interfaz MDM_files/bootstrap.min.js.descarga"></script>		
+		<script src="./Interfaz MDM_files/jquery.smartmenus.js.descarga"></script>
+		<script src="./Interfaz MDM_files/jquery.smartmenus.bootstrap.js.descarga"></script>
+		<script src="./Interfaz MDM_files/bootstrap-datepicker.js.descarga"></script>
+		<script src="./Interfaz MDM_files/bootstrap-datepicker.es.min.js.descarga"></script>
+		<script src="./Interfaz MDM_files/jquery.dataTables.min.js.descarga"></script>
+		<script src="./Interfaz MDM_files/dataTables.bootstrap.min.js.descarga"></script>
+		<script src="./Interfaz MDM_files/dataTables.responsive.min.js.descarga"></script>
+		<script src="./Interfaz MDM_files/responsive.bootstrap.min.js.descarga"></script>
+		<script src="./Interfaz MDM_files/select2.js.descarga"></script>
+		<script src="./Interfaz MDM_files/catalogos.js.descarga"></script>
+		
+		<script type="text/javascript">
+			/**
+			 * Función utilizada para bloquear la pantalla mientras se carga la seleccionada.
+			 */
+			function jsShowWindowLoad() 
+			{
+				//eliminamos si existe un div ya bloqueando
+			    jsRemoveWindowLoad();
+			   
+			    //centrar imagen gif
+			    var ancho = 0;
+			    var alto = 0;
+				
+				//obtenemos el ancho y alto de la ventana de nuestro navegador, compatible con todos los navegadores
+			    if (window.innerWidth == undefined) ancho = window.screen.width;
+			    else ancho = window.innerWidth;
+			    if (window.innerHeight == undefined) alto = window.screen.height;
+			    else alto = window.innerHeight;
+			    
+				//operaciÃ³n necesaria para centrar el div que muestra el mensaje
+			    //var heightdivsito = (alto/2)-250;
+				
+			   //imagen que aparece mientras nuestro div es mostrado y da apariencia de cargando
+			    imgCentro = "<div class='container-fluid' style='height:" + alto + "px;'><div  style='text-align:center;color:#000;margin-top:" + heightdivsito + "px'>" + "<img  src='/interfazmdm/static/img/cargando.gif'>";
+			
+			    //creamos el div que bloquea grande------------------------------------------
+			    div = document.createElement("div");
+			    div.id = "WindowLoad";
+			    div.style.width = ancho + "px";
+			    div.style.height = alto + "px";
+			    $("body").append(div);
+			
+			    //creamos un input text para que el foco se plasme en este y el usuario no pueda escribir en nada de atras
+			    input = document.createElement("input");
+			    input.id = "focusInput";
+			    input.type = "text";
+			
+				//asignamos el div que bloquea
+			    $("#WindowLoad").append(input);
+			    
+				//asignamos el foco y ocultamos el input text 
+			    $("#focusInput").focus();
+			    $("#focusInput").hide();
+				
+				//centramos el div del texto
+			    $("#WindowLoad").html(imgCentro);
+			}
+		</script>
+	
+</body></html>

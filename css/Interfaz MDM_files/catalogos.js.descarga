@@ -1,0 +1,76 @@
+/**
+ * Elementos en script que aplican para todos los catálogos
+ */
+$(document).ready(function() 
+{
+    $('#table_id').DataTable(
+    {
+    	responsive: 
+    	{
+	        details: false
+	    },
+	    language: 
+	    {
+	    	search: "Buscar en Resultados: ",
+	    	emptyTable: "Sin Registros",
+	    	info: "Mostrando del _START_ al _END_ (_TOTAL_ registros en total)",
+			infoEmpty: "Sin registros para mostrar",
+			infoFiltered: "(Filtrando de un total de _MAX_ registros)",
+			lengthMenu: "Mostrar _MENU_ registros",
+			zeroRecords: "No se encontraron coincidencias",
+	        paginate: {
+	        "first":      "First",
+	        "last":       "Last",
+	        "next":       "Siguiente",
+	        "previous":   "Anterior"
+		    },
+		    aria: {
+		        "sortAscending":  ": activate to sort column ascending",
+		        "sortDescending": ": activate to sort column descending"
+		    }
+	    }
+    });
+    
+   /**
+	 * Select: los combos que contengan el estilo ".select2",
+	 * se les agrega los estilos del plug-in select2.
+	 */
+	$(".select2").select2(
+	{				
+		theme: "bootstrap"
+	});
+	
+	/**
+	*  	Función que configura datepicker de fechas como matrimonio, defunción, etc
+	**/
+	$('.calendarioFechas').datepicker({
+		format: 'dd/mm/yyyy',
+		startDate: '-100y',
+		language: "es",
+		autoclose: true,
+		orientation: "bottom auto"
+	});           
+} );
+
+/**
+*  	Función que configura datepicker de la fecha de nacimiento en buscar
+**/
+$(function()
+{
+	$('#fechaNacimiento').datepicker({
+		format: 'dd/mm/yyyy',
+		startDate: '-120y',
+		language: "es",
+		autoclose: true,
+		orientation: "bottom auto"
+	});
+});
+
+/**
+ * Función utilizada para eliminar el bloqueo de pantalla.
+ */
+function jsRemoveWindowLoad() 
+{
+	// eliminamos el div que bloquea pantalla
+    $("#WindowLoad").remove();
+}
